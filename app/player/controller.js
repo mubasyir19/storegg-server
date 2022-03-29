@@ -34,6 +34,7 @@ module.exports= {
             .populate('user', '_id name phoneNumber')
             .populate('category')
             .populate('nominals')
+            .populate('payments')
 
             const payment = await Payment.find().populate('banks')
 
