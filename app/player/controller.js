@@ -33,8 +33,7 @@ module.exports= {
             const voucher = await Voucher.findOne({ _id: id})
             .populate('user', '_id name phoneNumber')
             .populate('category')
-            .populate('nominals')
-            .populate('payments')
+            .populate('nominals');
 
             const payment = await Payment.find().populate('banks')
 
