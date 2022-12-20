@@ -1,14 +1,16 @@
 {
+  "version": 2,
+  "name": "mahdy-storegg-server",
   "builds": [
     {
-      "src": "app.js",
+      "src": "/app.js",
       "use": "@vercel/node"
     }
   ],
   "routes": [
     {
       "src": "/(.*)",
-      "dest": "app.js"
+      "dest": "/app.js"
     }
   ]
 }
